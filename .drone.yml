@@ -8,3 +8,24 @@ steps:
   commands:
   - pip install Flask
   - pip install requests
+
+- name: test
+  image: python
+  commands:
+  - pip install pytest
+  - python -m pytest
+
+- name: checkos 
+  image: python
+  commands:
+  - python ./checkos.py  
+
+- name: hellodasha
+  image: python
+  commands:
+  - python ./hello.py
+ 
+- name: checkyear
+  image: python
+  commands:
+  - python ./checkyear.py
