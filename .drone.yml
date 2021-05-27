@@ -1,0 +1,10 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: installation
+  image: python
+  commands:
+  - pip install Flask
+  - pip install requests
